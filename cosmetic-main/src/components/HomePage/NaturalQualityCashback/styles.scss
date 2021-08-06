@@ -1,0 +1,27 @@
+.natural-quality-cashback-section{
+    .container{
+        .row{
+            .padding{
+                padding-left: 50px;
+                padding-right: 50px;
+                .card{
+                    border: none;
+                    .card-body{
+
+                        .card-text{
+                            color: rgb(163, 163, 163);
+                        }
+                        
+                    }
+                    .icon{
+                        font-size: 32px;
+                        color: rgba(126, 122, 77, 0.37);
+                        position: relative;
+                        z-index: inherit;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.text-capitalize {
+  text-transform: capitalize;
+}
+.color-palette{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin: 8px;
+}
+.color-name {
+  display: block;
+  width: 200px;
+  height: auto;
+  line-height: 3;
+  position: relative;
+  top: -80px;
+  background-color: rgb(107, 107, 107);
+  z-index: 99;
+  visibility: hidden;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: black;
+}
+
+/* Tooltip container */
+.color-palette {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+}
+
+/* Tooltip text */
+.color-palette .color-name {
+  visibility: hidden;
+  position: absolute;
+  background-color: #555;
+  color: #fff;
+  height: max-content;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: 10px;
+  left: 100px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -60px;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.color-palette .color-name::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.color-palette:hover .color-name {
+  visibility: visible;
+  opacity: 1;
+}
